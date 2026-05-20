@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Fauna</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#030605; color:#ede8df; font-family:system-ui,-apple-system,sans-serif; padding:48px 24px; max-width:720px; margin:0 auto; line-height:1.8; }
+  h1 { font-family:monospace; font-size:24px; letter-spacing:4px; color:#ede8df; margin-bottom:8px; }
+  .meta { font-family:monospace; font-size:11px; color:#5a5248; letter-spacing:2px; margin-bottom:48px; }
+  h2 { font-family:monospace; font-size:12px; letter-spacing:3px; color:#c8922a; margin-top:40px; margin-bottom:12px; }
+  p { font-size:14px; color:#7a7268; margin-bottom:16px; }
+  ul { margin-left:20px; margin-bottom:16px; }
+  li { font-size:14px; color:#7a7268; margin-bottom:8px; }
+  a { color:#c8922a; }
+  .back { display:inline-block; font-family:monospace; font-size:11px; letter-spacing:2px; color:#5a5248; text-decoration:none; margin-bottom:40px; }
+  .back:hover { color:#ede8df; }
+  footer { margin-top:64px; padding-top:24px; border-top:1px solid #1c1a16; font-family:monospace; font-size:10px; color:#3a3830; }
+</style>
+</head>
+<body>
+
+<a class="back" href="index.html">← FAUNA</a>
+
+<h1>PRIVACY POLICY</h1>
+<p class="meta">EFFECTIVE DATE: JANUARY 1, 2026 · LAST UPDATED: MAY 2026</p>
+
+<p>This Privacy Policy describes how Jason Capostagno ("we", "us", or "our") collects, uses, and handles your information when you use the Fauna mobile application ("Fauna" or the "App").</p>
+
+<h2>1. INFORMATION WE COLLECT</h2>
+<p>Fauna is designed with privacy as a core principle. The vast majority of your data never leaves your device.</p>
+<p><strong style="color:#ede8df;">Data stored locally on your device:</strong></p>
+<ul>
+  <li>Animal profiles (name, species, breed, age, gender, weight history, photos)</li>
+  <li>Behavior logs (text descriptions, timestamps, ratings)</li>
+  <li>Audio recordings of animal vocalizations</li>
+  <li>Photos and videos captured or uploaded within the app</li>
+  <li>Health alert records and status history</li>
+  <li>Behavioral baselines and analysis results</li>
+  <li>App settings and subscription status</li>
+</ul>
+<p>This data is stored using AsyncStorage on your device and is not transmitted to our servers or any third-party database.</p>
+
+<h2>2. DATA SENT FOR AI ANALYSIS</h2>
+<p>To provide AI-powered behavior translation and analysis, Fauna sends the following data to Anthropic's Claude AI via a secure proxy server operated by us:</p>
+<ul>
+  <li>Behavior descriptions you type or record</li>
+  <li>Photos you attach for photo translation</li>
+  <li>Audio recordings for audio translation</li>
+  <li>Video frames extracted from videos for video translation</li>
+  <li>Animal profile context (species, breed, age, routine, notes)</li>
+  <li>Recent log history for contextual analysis</li>
+</ul>
+<p>This data is transmitted solely for the purpose of generating AI responses. We do not store this data on our servers after the response is returned. Audio and video content is not retained by us after analysis.</p>
+<p>Anthropic's privacy policy governs their handling of data processed through their API. You can review it at <a href="https://www.anthropic.com/privacy" target="_blank">anthropic.com/privacy</a>.</p>
+
+<h2>3. SUBSCRIPTION AND PAYMENT DATA</h2>
+<p>Fauna uses Apple's in-app purchase system for subscriptions. We do not collect or store your payment information. All billing is handled by Apple and governed by Apple's Privacy Policy.</p>
+
+<h2>4. HEALTH ALERT DATA</h2>
+<p>Health alert records are stored permanently on your device as an audit trail. This is intentional and by design — it ensures you have a complete health observation history for your animal. These records cannot be deleted and are never transmitted to external servers.</p>
+
+<h2>5. PERMISSIONS WE REQUEST</h2>
+<ul>
+  <li><strong style="color:#ede8df;">Camera:</strong> To capture photos and videos of your animal for profile and behavior analysis.</li>
+  <li><strong style="color:#ede8df;">Microphone:</strong> To record animal vocalizations for audio translation.</li>
+  <li><strong style="color:#ede8df;">Photo Library:</strong> To select existing photos and videos, and to save captured media.</li>
+  <li><strong style="color:#ede8df;">Notifications:</strong> To send local reminders about logging, streaks, and behavioral summaries. All notifications are generated on-device.</li>
+</ul>
+
+<h2>6. CHILDREN'S PRIVACY</h2>
+<p>Fauna is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13.</p>
+
+<h2>7. DATA RETENTION AND DELETION</h2>
+<p>All your data is stored locally on your device. You can delete all app data at any time by deleting the Fauna app from your device. This permanently removes all locally stored data. Health alert records, while permanently stored during app use, are also removed when the app is deleted.</p>
+
+<h2>8. THIRD-PARTY SERVICES</h2>
+<p>Fauna uses the following third-party services:</p>
+<ul>
+  <li><strong style="color:#ede8df;">Anthropic Claude API:</strong> For AI behavior analysis. Data sent: behavior descriptions, photos, audio, video frames, animal context.</li>
+  <li><strong style="color:#ede8df;">Apple App Store / StoreKit:</strong> For subscription management and payments.</li>
+  <li><strong style="color:#ede8df;">Cloudflare Workers:</strong> As a secure proxy for API requests. No data is logged or retained.</li>
+</ul>
+
+<h2>9. SECURITY</h2>
+<p>All API requests are routed through a secure Cloudflare Workers proxy using authenticated headers. Data in transit is encrypted via HTTPS. Data at rest is stored on your device using standard iOS secure storage.</p>
+
+<h2>10. CHANGES TO THIS POLICY</h2>
+<p>We may update this Privacy Policy from time to time. We will notify you of material changes by updating the "Last Updated" date at the top of this page. Continued use of Fauna after any changes constitutes acceptance of the updated policy.</p>
+
+<h2>11. CONTACT</h2>
+<p>If you have questions about this Privacy Policy, please contact us at: <a href="mailto:support@fauna-app.com">support@fauna-app.com</a></p>
+
+<footer>
+  <p>© 2026 Jason Capostagno · Fauna · <a href="index.html" style="color:#5a5248;text-decoration:none;">fauna-app</a></p>
+</footer>
+
+</body>
+</html>
