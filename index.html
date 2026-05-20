@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fauna — Animal Behavior Translator</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap');
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#030605; color:#ede8df; font-family:system-ui,-apple-system,sans-serif; min-height:100vh; }
+  .hero { min-height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:40px 24px; text-align:center; background:radial-gradient(ellipse at 50% 40%, #0d2220 0%, #081614 55%, #030807 100%); }
+  .wordmark { font-family:'Cormorant Garamond',serif; font-weight:500; font-size:clamp(48px,10vw,96px); letter-spacing:0.18em; background:linear-gradient(135deg, #ffde6c 0%, #eebc3a 20%, #d49816 50%, #b67206 80%, #945002 100%); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; margin-bottom:8px; }
+  .wave { width:clamp(200px,60vw,480px); height:32px; margin-bottom:32px; }
+  .tagline { font-size:clamp(14px,2.5vw,20px); color:#7a7268; letter-spacing:0.08em; margin-bottom:48px; font-family:monospace; }
+  .pills { display:flex; gap:12px; flex-wrap:wrap; justify-content:center; margin-bottom:56px; }
+  .pill { background:#1c1a16; border:1px solid #2c2820; border-radius:4px; padding:8px 16px; font-family:monospace; font-size:11px; letter-spacing:2px; color:#7a7268; }
+  .cta { background:linear-gradient(135deg,#d49816,#b67206); color:#030605; font-family:monospace; font-weight:700; letter-spacing:3px; font-size:13px; border:none; border-radius:4px; padding:18px 40px; cursor:pointer; text-decoration:none; display:inline-block; }
+  .links { display:flex; gap:32px; margin-top:48px; flex-wrap:wrap; justify-content:center; }
+  .links a { color:#5a5248; font-family:monospace; font-size:11px; letter-spacing:2px; text-decoration:none; }
+  .links a:hover { color:#ede8df; }
+  .features { padding:80px 24px; max-width:900px; margin:0 auto; }
+  .features-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:20px; margin-top:40px; }
+  .feature-card { background:#1c1a16; border:1px solid #2c2820; border-radius:4px; padding:24px; }
+  .feature-icon { font-size:28px; margin-bottom:12px; }
+  .feature-title { font-family:monospace; font-size:11px; letter-spacing:3px; color:#c8922a; margin-bottom:8px; }
+  .feature-desc { font-size:13px; color:#7a7268; line-height:1.7; }
+  .section-label { font-family:monospace; font-size:10px; letter-spacing:4px; color:#5a5248; text-align:center; margin-bottom:16px; }
+  .section-title { font-family:monospace; font-size:clamp(18px,3vw,28px); letter-spacing:3px; color:#ede8df; text-align:center; }
+  footer { border-top:1px solid #1c1a16; padding:32px 24px; text-align:center; }
+  footer p { font-family:monospace; font-size:10px; color:#3a3830; letter-spacing:1px; line-height:2; }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="wordmark">FAUNA</div>
+  <svg class="wave" viewBox="0 0 480 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 16 Q12 4, 24 16 Q36 28, 48 16 Q60 4, 72 16 Q84 28, 96 16 Q108 4, 120 16 Q132 28, 144 16 Q156 4, 168 16 Q180 28, 192 16 Q204 4, 216 16 Q228 28, 240 16 Q252 4, 264 16 Q276 28, 288 16 Q300 4, 312 16 Q324 28, 336 16 Q348 4, 360 16 Q372 28, 384 16 Q396 4, 408 16 Q420 28, 432 16 Q444 4, 456 16 Q468 28, 480 16" stroke="url(#gold)" stroke-width="2" stroke-linecap="round"/>
+    <defs>
+      <linearGradient id="gold" x1="0" y1="0" x2="480" y2="0">
+        <stop offset="0%" stop-color="#ffde6c" stop-opacity="0.2"/>
+        <stop offset="30%" stop-color="#d49816" stop-opacity="0.8"/>
+        <stop offset="70%" stop-color="#d49816" stop-opacity="0.8"/>
+        <stop offset="100%" stop-color="#945002" stop-opacity="0.2"/>
+      </linearGradient>
+    </defs>
+  </svg>
+  <p class="tagline">ANIMAL BEHAVIOR TRANSLATOR</p>
+  <div class="pills">
+    <div class="pill">🧠 AI POWERED</div>
+    <div class="pill">🔬 SCIENCE BACKED</div>
+    <div class="pill">🐾 ALL SPECIES</div>
+    <div class="pill">📱 iOS</div>
+  </div>
+  <a class="cta" href="#">DOWNLOAD ON THE APP STORE</a>
+  <div class="links">
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+    <a href="support.html">Support</a>
+  </div>
+</div>
+
+<div class="features">
+  <p class="section-label">WHAT FAUNA DOES</p>
+  <h2 class="section-title">YOUR ANIMAL IS TALKING.<br>FAUNA TRANSLATES.</h2>
+  <div class="features-grid">
+    <div class="feature-card">
+      <div class="feature-icon">🎙</div>
+      <div class="feature-title">AUDIO TRANSLATION</div>
+      <div class="feature-desc">Record vocalizations and Fauna decodes the acoustic profile — volume, duration, intensity — into first-person behavioral insight.</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">📹</div>
+      <div class="feature-title">VIDEO ANALYSIS</div>
+      <div class="feature-desc">Upload up to 10 seconds of video. Fauna analyzes movement, posture, and body language frame by frame.</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🔬</div>
+      <div class="feature-title">PATTERN DETECTION</div>
+      <div class="feature-desc">Over time, Fauna builds a behavioral baseline unique to your animal and flags emerging health or behavioral concerns.</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">⚠️</div>
+      <div class="feature-title">HEALTH ALERTS</div>
+      <div class="feature-desc">AI-generated health observations based on behavioral patterns. Permanent audit trail you can share with your vet.</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">📋</div>
+      <div class="feature-title">BEHAVIORAL TIMELINE</div>
+      <div class="feature-desc">Every observation logged and searchable. Build a complete behavioral record over the lifetime of your animal.</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🏢</div>
+      <div class="feature-title">BUILT FOR PROFESSIONALS</div>
+      <div class="feature-desc">Vet clinics, kennels, grooming salons, research centers, aquariums — Fauna scales to your team and your animal count.</div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 Jason Capostagno · All rights reserved</p>
+  <p>FAUNA is not a substitute for professional veterinary care.</p>
+  <p><a href="privacy.html" style="color:#5a5248;text-decoration:none;">Privacy Policy</a> · <a href="terms.html" style="color:#5a5248;text-decoration:none;">Terms of Service</a> · <a href="support.html" style="color:#5a5248;text-decoration:none;">Support</a></p>
+</footer>
+
+</body>
+</html>
