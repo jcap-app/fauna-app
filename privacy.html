@@ -15,86 +15,118 @@
 
 <main class="wrap doc">
 <h1>Privacy Policy</h1>
-<div class="updated">Effective &amp; last updated · June 8, 2026</div>
+<div class="updated">Effective &amp; last updated · July 14, 2026</div>
 
 <p>This Privacy Policy describes how your personal data is collected, used, and handled when you use the Fauna mobile application (“Fauna” or the “App”).</p>
 
 <h2>1. Who we are (Data Controller)</h2>
-<p>The data controller responsible for your personal data is <strong>Jason Capostagno</strong>, an individual sole proprietor based in New York, USA (to be replaced with “Fauna LLC” once the LLC is formed).</p>
+<p>Fauna (“Fauna,” “we,” “us,” “our”) is a mobile application that uses artificial intelligence to help people interpret animal behavior. The data controller responsible for your personal data is <strong>Jason Capostagno</strong>, an individual sole proprietor based in New York, USA (to be replaced with “Fauna LLC” once the LLC is formed).</p>
 <ul>
   <li><strong>Contact / data-protection requests:</strong> <a href="mailto:fauna.app.support@gmail.com">fauna.app.support@gmail.com</a></li>
   <li><strong>Postal address:</strong> available on request at the email above</li>
 </ul>
-<p>We do not have an establishment in the European Union and have not appointed an EU/UK representative under Article 27 GDPR; given the nature and scale of processing we rely on the Article 27(2) derogation where applicable.</p>
+<p>We do not have an establishment in the European Union and have not appointed an EU/UK representative under Article 27 GDPR; given the nature and scale of processing we rely on the Article 27(2) derogation where applicable. If our processing changes, we will appoint a representative and update this policy.</p>
 
 <h2>2. Summary (the short version)</h2>
 <ul>
-  <li>Your logs, photos, audio, video, and notes are stored <strong>locally on your device</strong>. We do not operate a database that holds your content.</li>
-  <li>To generate an interpretation, the content you submit is <strong>sent off your device</strong> to a third-party AI provider (Anthropic) via a processing proxy (hosted on Cloudflare). This involves a transfer to the United States.</li>
-  <li>We do <strong>not</strong> sell your personal data and do <strong>not</strong> use it for third-party advertising.</li>
-  <li>We do <strong>not</strong> currently pool or aggregate your observations into any community dataset. If we ever offer that, it will be <strong>opt-in</strong> and this policy will be updated first.</li>
+  <li>Fauna is <strong>local-first</strong>: your logs, photos, audio, video, notes, and daily check-ins live <strong>on your device</strong>.</li>
+  <li>To make sync, teams, animal-sharing, community, and account-recovery features work, Fauna automatically creates a <strong>lightweight anonymous account</strong> on our servers (hosted by <strong>Supabase</strong>). We therefore <strong>do operate a database</strong>, and the data it holds is <strong>linked to your anonymous account</strong> (see Section 3 for exactly what is stored).</li>
+  <li>To generate an interpretation, the content you submit is <strong>sent off your device</strong> to a third-party AI provider (Anthropic) by way of a processing proxy (hosted on Cloudflare). This involves a transfer to the United States.</li>
+  <li><strong>Anonymized behavioral observations are contributed to community statistics and research by default.</strong> This never includes your name, your animal’s name, or your media — and you can <strong>turn it off at any time</strong> in <strong>Settings → Privacy</strong>.</li>
+  <li>We do <strong>not</strong> sell your personal data, and we do <strong>not</strong> use it for third-party advertising or tracking.</li>
   <li>Fauna does <strong>not</strong> provide veterinary or medical advice. See our <a href="terms.html">Terms of Service</a>.</li>
 </ul>
 
 <h2>3. What data we process</h2>
-<p><strong>a) Content you create (“Observation Content”).</strong> Free-text behavior descriptions, photos, video recordings, audio recordings, animal profile details (name, species, breed, age, weight, notes, routine), and accuracy ratings you give. This is stored locally on your device.</p>
+<p>Fauna is local-first, but some data is stored on our servers (Supabase) so that sync, teams, sharing, community, account recovery, and crash-fixing can work. Data we store on our servers is <strong>linked to your anonymous account identifier</strong>.</p>
+<p><strong>a) Your account.</strong> When you first open Fauna, we create a <strong>lightweight anonymous account</strong> — no email or password required. It has a random account identifier and a shareable <strong>Fauna ID</strong> so teammates and shared-animal collaborators can find you. You may optionally <strong>secure your account with Sign in with Apple</strong>; if you do, Apple shares your <strong>name and email address</strong> (your real email, or Apple’s private “Hide My Email” relay address) with us so we can recover your account on a new device. Your profile also includes a <strong>display name</strong> you choose.</p>
+<p><strong>b) Content you create (“Observation Content”).</strong> Free-text behavior descriptions, photos, video recordings, audio recordings, daily check-ins, animal profile details (name, species, breed, age, weight, notes, routine), and accuracy ratings/feedback you give. This is stored <strong>locally on your device</strong>. Some of it is <strong>also stored on our servers when you use a feature that requires it</strong>, specifically:</p>
+<ul>
+  <li><strong>Animals and observations you share</strong> (via a team or an Animal ID) — the animal profile, its photo, and the behavior observations shared to that team/collaboration are stored on our servers so the people you approve can see them.</li>
+  <li><strong>Animal profile photos and team logos</strong> you upload are stored in our media storage.</li>
+  <li><strong>Anonymized observations</strong> you contribute to community/research (on by default; see Section 4 and the opt-out below).</li>
+  <li><strong>Achievements/badges</strong> you earn are synced so they survive a reinstall.</li>
+</ul>
 <p>When you request an interpretation, <strong>what is sent off your device depends on the type:</strong></p>
 <ul>
-  <li><strong>Text, photos, and video</strong> are transmitted to our AI processor to generate the interpretation.</li>
-  <li><strong>Audio is processed on your device</strong> into rough metadata only (approximate recording length and a loudness estimate derived from file size) — the <strong>raw audio file is not transmitted</strong> to the AI processor; it stays on your device unless you delete it. Only that metadata and any text context you add are sent.</li>
+  <li><strong>Text, photos, and video</strong> are transmitted to our AI processor to generate the interpretation. (For video, we extract still frames on your device and send those frames.)</li>
+  <li><strong>Audio recordings are processed on your device</strong> into rough metadata only (approximate recording length and a loudness estimate derived from file size) — the <strong>raw audio file is not transmitted</strong> to the AI processor; it stays on your device unless you delete it. Only that metadata and any text context you add are sent.</li>
 </ul>
-<p><strong>b) Device and app data.</strong> App settings, subscription/entitlement state, and locally stored counters (e.g. monthly log counts). Subscription status is managed through Apple’s App Store / Google Play and your RevenueCat-validated entitlement; we do not receive your full payment-card details.</p>
-<p><strong>c) Push notification token</strong> (if you enable notifications) — used to deliver reminders/alerts you opted into.</p>
-<p><strong>d) Diagnostic data</strong> — crash and basic performance data as provided by the app-store platforms.</p>
-<p>We do not intentionally collect special-category data. Because Observation Content is free text, please do not enter sensitive personal information about identifiable people.</p>
+<p><strong>c) Teams and team clients (business/professional users).</strong> If you create or join a team, we store your <strong>team membership, role, and the team’s shared animals and observations</strong>. If you use the client-management feature, we store the <strong>client records you enter — which may include a client’s name, phone number, and email address</strong>. If you enter another person’s contact details, you are responsible for having a lawful basis to do so; you act as the controller of that client data and Fauna acts as your processor (a data-processing addendum is available on request).</p>
+<p><strong>d) Device and app data.</strong> App settings, subscription tier/entitlement state, and locally stored counters (e.g. monthly log counts). Subscription status is managed through Apple’s App Store / Google Play and your <strong>RevenueCat</strong>-validated entitlement; RevenueCat receives your <strong>purchase and entitlement history</strong> tied to your account identifier. We do <strong>not</strong> receive your full payment-card details.</p>
+<p><strong>e) Push notification token (if you enable notifications).</strong> We store your device’s <strong>push token</strong> (linked to your account) to deliver reminders/alerts you have opted into.</p>
+<p><strong>f) Diagnostic / crash data.</strong> To keep the app reliable, if the app hits an error we send a <strong>crash report to our servers</strong> (Supabase) containing a technical error message, a code stack trace, the platform, and the app version, linked to your anonymous account identifier. These reports are <strong>stripped of your content</strong> — they never include your notes, observations, animal names, or media — and are used solely to diagnose and fix bugs.</p>
+<p>We do not intentionally collect special-category data about you. Because Observation Content is free text, please do not enter sensitive personal information about identifiable people.</p>
 
-<h2>4. How and why we use your data (GDPR lawful bases)</h2>
+<h2>4. How and why we use your data (purposes &amp; GDPR lawful bases)</h2>
 <table>
-  <tr><th>Purpose</th><th>Data used</th><th>Lawful basis</th></tr>
-  <tr><td>Generate AI behavior interpretations you request</td><td>Observation Content</td><td>Contract (Art. 6(1)(b))</td></tr>
-  <tr><td>Store your logs/history on your device</td><td>Observation Content</td><td>Contract (Art. 6(1)(b))</td></tr>
-  <tr><td>Provide and meter subscription features</td><td>Entitlement state</td><td>Contract (Art. 6(1)(b))</td></tr>
-  <tr><td>Send notifications you enabled</td><td>Push token</td><td>Consent (Art. 6(1)(a)) — withdrawable</td></tr>
-  <tr><td>Secure the app / prevent AI-proxy abuse</td><td>Technical data</td><td>Legitimate interests (Art. 6(1)(f))</td></tr>
-  <tr><td>Diagnose crashes, improve stability</td><td>Diagnostic data</td><td>Legitimate interests (Art. 6(1)(f))</td></tr>
-  <tr><td>(Future, not active) Contribute anonymized observations to a community dataset</td><td>Observation Content</td><td>Consent (Art. 6(1)(a)) — opt-in, not yet offered</td></tr>
+  <tr><th>Purpose</th><th>Data used</th><th>Lawful basis (GDPR Art. 6)</th></tr>
+  <tr><td>Create and operate your anonymous account; sync your data across devices</td><td>Account identifier, display name, Fauna ID</td><td>Contract (Art. 6(1)(b))</td></tr>
+  <tr><td>Recover your account on a new device</td><td>Sign in with Apple name + email</td><td>Contract (Art. 6(1)(b))</td></tr>
+  <tr><td>Generate AI behavior interpretations you request</td><td>Observation Content (text/photos/video frames)</td><td>Contract (Art. 6(1)(b))</td></tr>
+  <tr><td>Store your logs/history and check-ins on your device</td><td>Observation Content</td><td>Contract (Art. 6(1)(b))</td></tr>
+  <tr><td>Teams, animal-sharing, and community features you use</td><td>Shared animals/observations, membership, client records</td><td>Contract (Art. 6(1)(b))</td></tr>
+  <tr><td>Provide and meter subscription features</td><td>Subscription/entitlement + purchase state</td><td>Contract (Art. 6(1)(b))</td></tr>
+  <tr><td>Send notifications you enabled</td><td>Push token</td><td>Consent (Art. 6(1)(a)) — withdrawable in device settings</td></tr>
+  <tr><td>Keep the app secure, prevent abuse of the AI proxy</td><td>Technical/request data, account identifier</td><td>Legitimate interests (Art. 6(1)(f))</td></tr>
+  <tr><td>Diagnose crashes and improve stability</td><td>Crash/diagnostic data</td><td>Legitimate interests (Art. 6(1)(f))</td></tr>
+  <tr><td>Produce community statistics and research from anonymized observations (on by default; opt-out below)</td><td>Anonymized behavioral observations (never your name, animal name, or media)</td><td>Legitimate interests (Art. 6(1)(f)) — with easy opt-out / right to object</td></tr>
 </table>
-<p>We do not carry out solely automated decision-making producing legal or similarly significant effects about you under Article 22 GDPR. AI interpretations are informational outputs about your animal, not decisions about you, and not a substitute for professional advice.</p>
+<p><strong>Community &amp; research sharing (on by default — how to opt out).</strong> By default, Fauna contributes your <strong>anonymized behavioral observations</strong> to aggregate community statistics and research. This <strong>never</strong> includes your name, your animal’s name, or your media. You can <strong>turn it off at any time</strong> in <strong>Settings → Privacy</strong>; turning it off stops future contribution. Because this is on by default with an opt-out, we rely on <strong>legitimate interests</strong> for it (with your right to object), not opt-in consent. <em>Note: the EU/EEA is excluded from distribution at launch. If we re-enable EU distribution, we will move community/research contribution to <strong>opt-in consent</strong> to meet GDPR consent standards.</em></p>
+<p>We do not carry out solely automated decision-making that produces legal or similarly significant effects about you under Article 22 GDPR. AI interpretations are informational outputs about your animal, are not decisions about you, and are not a substitute for professional advice.</p>
 
-<h2>5. AI processing and third parties</h2>
-<p>To generate interpretations, the Observation Content you submit (text, photos, and video — and for audio, only on-device-derived metadata plus your text context, <strong>not the raw audio file</strong>) is transmitted from your device to:</p>
+<h2>5. Daily check-ins and the “Guardian” pattern read</h2>
+<p>Fauna offers a <strong>daily check-in</strong> (a short, structured pulse on your animal or colony) and a <strong>Living Dossier</strong> with an AI <strong>pattern read</strong> (“the Guardian”) that looks at your check-in history over time and surfaces steady baselines and changes worth watching.</p>
+<ul>
+  <li>Your check-in data is stored <strong>locally on your device</strong>. It is <strong>mirrored to our servers only</strong> for animals you <strong>share</strong> (team or Animal ID), so collaborators can see the shared record.</li>
+  <li>The Guardian pattern read sends a <strong>short text summary</strong> of your check-in trends (and, if you added them, your recent notes) to our AI processor to produce the read. It follows the same AI-processing terms as Section 6.</li>
+  <li>The check-in and Guardian features are <strong>non-diagnostic</strong>. They read your own records; they do not diagnose disease and are <strong>not veterinary advice</strong>. For any health concern, consult a licensed veterinarian (or, for a colony, a mentor/inspection). See our <a href="terms.html">Terms of Service</a>.</li>
+</ul>
+
+<h2>6. AI processing and third parties</h2>
+<p>To generate interpretations and pattern reads, the Observation Content you submit (text, photos, and video frames — and for audio, only on-device-derived metadata plus your text context, <strong>not the raw audio file</strong>, per Section 3) is transmitted from your device, authenticated as your account, to:</p>
 <ul>
   <li><strong>Cloudflare, Inc.</strong> — hosts the processing proxy through which requests pass. See <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">cloudflare.com/privacypolicy</a></li>
   <li><strong>Anthropic, PBC</strong> — the AI provider that generates the interpretation. See <a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">anthropic.com/legal/privacy</a></li>
 </ul>
-<p>We pass your content to these providers solely to produce the output you requested. We do not control how these providers log, cache, or retain data on their own systems; please review their policies. We instruct our providers not to use submitted content to train their models where such controls are available to us, but you should not rely on this for confidential material. We do not use any other analytics SDKs or advertising networks to collect your Observation Content.</p>
-
-<h2>6. International data transfers</h2>
-<p>We are in the United States, and our AI processor (Anthropic) and proxy host (Cloudflare) process data in the United States and other countries. If you are in the EEA, the UK, or Switzerland, your data is therefore transferred outside your home region. Where required, such transfers are made under appropriate safeguards, including the European Commission’s Standard Contractual Clauses (SCCs) and/or the EU–U.S. Data Privacy Framework and its UK extension, as offered by the relevant provider. Request information about the safeguards at <a href="mailto:fauna.app.support@gmail.com">fauna.app.support@gmail.com</a>.</p>
-
-<h2>7. Storage and retention</h2>
+<p>We also use:</p>
 <ul>
-  <li><strong>Observation Content</strong> stays on your device until you delete it (delete a log, an animal, or use “Clear All” in Settings) or uninstall the app. We do not retain a server copy.</li>
-  <li>Content sent to our AI processor for an interpretation is retained by that processor under their retention policies (Section 5), not ours.</li>
-  <li>Subscription/entitlement records are retained by Apple/Google/RevenueCat per their policies and our need to honor your purchases.</li>
+  <li><strong>Supabase</strong> — hosts our database, authentication (your anonymous account), and media storage.</li>
+  <li><strong>RevenueCat</strong> — validates your subscription purchases/entitlements.</li>
+  <li><strong>Expo / Apple / Google</strong> — app delivery, over-the-air updates, and push notification delivery.</li>
 </ul>
-<p>Because content lives on your device, uninstalling the app or using the in-app delete tools is the primary way to erase it.</p>
+<p>This data <strong>leaves your device</strong> when you use these features. We pass your content to these providers solely to produce the output or run the feature you requested. We do not control, and cannot guarantee, how the AI providers log, cache, or retain data on their own systems; please review their respective policies. We instruct our providers not to use submitted content to train their models where such controls are available to us, but you should not rely on this for confidential material.</p>
+<p>We do <strong>not</strong> use any analytics or advertising SDKs, and we do <strong>not</strong> track you across other companies’ apps or websites.</p>
 
-<h2>8. Your rights</h2>
-<p><strong>EEA / UK / Switzerland (GDPR):</strong> access, rectification, erasure, restriction, portability, objection, and the right to withdraw consent. Because most Observation Content is stored locally, you can exercise access and erasure directly in the app. For any data we or our processors hold, contact <a href="mailto:fauna.app.support@gmail.com">fauna.app.support@gmail.com</a>. You may also lodge a complaint with your local supervisory authority.</p>
-<p><strong>California (CCPA/CPRA):</strong> the right to know, delete, correct, and to opt out of “sale”/“sharing.” <strong>We do not sell or share your personal information</strong> as defined under the CPRA, and we do not process it for cross-context behavioral advertising. We will not discriminate against you for exercising your rights.</p>
-<p>To make a request, email <a href="mailto:fauna.app.support@gmail.com">fauna.app.support@gmail.com</a>; we respond within the timeframe required by law (generally one month under GDPR; 45 days under CCPA, extendable).</p>
+<h2>7. International data transfers</h2>
+<p>We are in the United States, and our providers (Supabase, Anthropic, Cloudflare, RevenueCat) may process data in the United States and other countries. If you are in the EEA, the UK, or Switzerland, your data is therefore transferred outside your home region.</p>
+<p>Where required, such transfers are made under appropriate safeguards, including the <strong>European Commission’s Standard Contractual Clauses (SCCs)</strong> and/or the <strong>EU–U.S. Data Privacy Framework</strong> and its UK extension, as offered by the relevant provider. You may request information about the safeguards in place by contacting us at <a href="mailto:fauna.app.support@gmail.com">fauna.app.support@gmail.com</a>.</p>
 
-<h2>9. Children</h2>
-<p>Fauna is not directed to children. You must be at least <strong>13 years old (16 in the EEA/UK)</strong> to use Fauna. We do not knowingly collect personal data from children below the applicable age. If you believe a child has provided us data, contact <a href="mailto:fauna.app.support@gmail.com">fauna.app.support@gmail.com</a> and we will delete it.</p>
+<h2>8. Where your data is stored and for how long</h2>
+<ul>
+  <li><strong>Observation Content on your device</strong> stays there until <strong>you delete it</strong> (delete a log, an animal, or use “Clear All” in Settings) or uninstall the app.</li>
+  <li><strong>Data on our servers</strong> (your anonymous account/profile, shared animals and observations, team data and client records, media you uploaded, achievements, push token, and crash reports) is retained while your account is active. You can <strong>delete your account and all associated server data at any time</strong> in <strong>Settings → Delete Account &amp; Data</strong>; if you own a team, ownership passes to your next-highest-ranking member. Uninstalling the app does <strong>not</strong> by itself delete server data — use Delete Account &amp; Data (or email us).</li>
+  <li>Content sent to our AI processor for an interpretation is retained by that processor according to <strong>their</strong> retention policies (see Section 6), not ours.</li>
+  <li>Subscription/entitlement records are retained by Apple/Google/RevenueCat per their policies and our need to honor your purchases.</li>
+  <li>Crash reports are retained only as long as needed to diagnose stability issues.</li>
+</ul>
 
-<h2>10. Security</h2>
-<p>We use HTTPS/TLS for all data in transit and rely on platform device security for data at rest on your device. No method of transmission or storage is completely secure; we cannot guarantee absolute security.</p>
+<h2>9. Your rights</h2>
+<p>Depending on where you live, you have rights over your personal data.</p>
+<p><strong>EEA / UK / Switzerland (GDPR / UK GDPR):</strong> access, rectification, erasure, restriction, portability, objection, and the right to withdraw consent at any time. You can exercise access and erasure directly in the app: your on-device content via the in-app delete tools, and your server-side data via <strong>Settings → Delete Account &amp; Data</strong>. You can <strong>object to community/research contribution</strong> at any time via <strong>Settings → Privacy</strong>. For anything else we or our processors hold, contact us at <a href="mailto:fauna.app.support@gmail.com">fauna.app.support@gmail.com</a>. You also have the right to lodge a complaint with your local supervisory authority.</p>
+<p><strong>California (CCPA/CPRA):</strong> the right to know, delete, correct, and to opt out of “sale”/“sharing.” <strong>We do not sell or share your personal information</strong> as those terms are defined under the CPRA, and we do not process it for cross-context behavioral advertising. We will not discriminate against you for exercising your rights.</p>
+<p>To make a request, email <a href="mailto:fauna.app.support@gmail.com">fauna.app.support@gmail.com</a>. We will verify your request and respond within the timeframe required by applicable law (generally within one month under GDPR; 45 days under the CCPA, extendable).</p>
 
-<h2>11. Changes to this policy</h2>
-<p>We may update this policy. Material changes will be reflected by updating the “last updated” date and, where appropriate, an in-app notice. Continued use after an update constitutes acceptance where permitted by law.</p>
+<h2>10. Children</h2>
+<p>Fauna is <strong>not directed to children</strong>. You must be at least <strong>13 years old (16 in the EEA/UK)</strong> to use Fauna. We do not knowingly collect personal data from children below the applicable age. If you believe a child has provided us data, contact <a href="mailto:fauna.app.support@gmail.com">fauna.app.support@gmail.com</a> and we will delete it.</p>
 
-<h2>12. Contact</h2>
+<h2>11. Security</h2>
+<p>We use HTTPS/TLS for all data in transit, protect server-side data with authenticated, per-user access controls, and rely on platform device security for data at rest on your device. No method of transmission or storage is completely secure; we cannot guarantee absolute security.</p>
+
+<h2>12. Changes to this policy</h2>
+<p>We may update this policy. Material changes will be reflected by updating the “Last updated” date and, where appropriate, an in-app notice. Continued use after an update constitutes acceptance of the revised policy where permitted by law.</p>
+
+<h2>13. Contact</h2>
 <p>Questions or requests: <a href="mailto:fauna.app.support@gmail.com">fauna.app.support@gmail.com</a>. Postal address available on request.</p>
 </main>
 
